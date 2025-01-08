@@ -1,6 +1,6 @@
 {
   "name": "@seriesfi/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ESLint shareable config for Series Financial",
   "main": "eslint.config.mjs",
   "type": "module",
@@ -35,6 +35,6 @@
     "node": ">=20.11.0"
   },
   "peerDependencies": {
-    "@seriesfi/prettier-config": "^1.1.1"
+    "@seriesfi/prettier-config": "^1.2.1"
   }
 }
