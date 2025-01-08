@@ -36,5 +36,8 @@
   },
   "peerDependencies": {
     "@seriesfi/prettier-config": "^1.0.0"
+  },
+  "devDependencies": {
+    "@seriesfi/prettier-config": "^1.0.0"
   }
 }
