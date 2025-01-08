@@ -1,8 +1,9 @@
 {
   "name": "@seriesfi/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint shareable config for Series Financial",
   "main": "eslint.config.mjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +23,6 @@
   },
   "homepage": "https://github.com/yoonthegoon/eslint-config#readme",
   "dependencies": {
-    "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.17.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
@@ -35,6 +35,6 @@
     "node": ">=20.11.0"
   },
   "peerDependencies": {
-    "@seriesfi/prettier-config": "^1.0.0"
+    "@seriesfi/prettier-config": "^1.1.1"
   }
 }
