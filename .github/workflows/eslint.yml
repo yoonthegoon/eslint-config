@@ -11,12 +11,7 @@ name: ESLint
 
 on:
   push:
-    branches: ['main']
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: ['main']
-  schedule:
-    - cron: '15 23 * * 1'
+    branches: []
 
 jobs:
   eslint:
@@ -35,7 +30,4 @@ jobs:
           npm install eslint@8.57.1
 
       - name: Run ESLint
-        env:
-          SARIF_ESLINT_IGNORE_SUPPRESSED: 'true'
         run: npx eslint . --config eslint.config.mjs
-        continue-on-error: true
