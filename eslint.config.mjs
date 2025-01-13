@@ -12,7 +12,7 @@ export default tseslint.config(
   eslintConfigPrettier,
   eslintPluginPrettierRecommended,
   {
-    files: ['*.ts', '*.tsx', '*.mts', '*.cts'], // More restrictive pattern
+    files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {
