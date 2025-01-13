@@ -1,4 +1,5 @@
 import eslint from '@eslint/js'
+import parser from '@typescript-eslint/parser'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import globals from 'globals'
@@ -13,21 +14,14 @@ export default tseslint.config(
   eslintConfigPrettier,
   eslintPluginPrettierRecommended,
   {
-    files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
     languageOptions: {
       globals: {
         ...globals.node,
       },
-      parser: tseslint.parser,
+      parser: parser,
       parserOptions: {
-        project: './tsconfig.json',
+        project: true,
       },
-    },
-    rules: {
-      '@typescript-eslint/explicit-function-return-type': 'off',
-      '@typescript-eslint/explicit-module-boundary-types': 'off',
-      '@typescript-eslint/interface-name-prefix': 'off',
-      '@typescript-eslint/no-explicit-any': 'off',
     },
   },
 )
