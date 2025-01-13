@@ -1,6 +1,7 @@
 import eslint from '@eslint/js'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
@@ -14,6 +15,9 @@ export default tseslint.config(
   {
     files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
     languageOptions: {
+      globals: {
+        ...globals.node,
+      },
       parser: tseslint.parser,
       parserOptions: {
         project: './tsconfig.json',
